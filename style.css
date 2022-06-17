@@ -54,6 +54,12 @@ button{
     border-radius: 15px;
     font-family: 'Montserrat Alternates', sans-serif;
     font-weight: 700;
+    cursor: pointer;
+    transition: .3s;
+}
+
+button:hover {
+    opacity: 0.9;
 }
 
 #comPoints{
@@ -108,6 +114,28 @@ button{
         -webkit-top: 10%;
     }
 }
+
+
+/* shake hands  */
+
+.shake {
+    animation: playing 0.5s infinite;
+    -webkit-animation: playing 0.5s infinite;
+}
+
+@keyframes playing {
+    0% {
+        transform: rotate(-20deg);
+    }
+    50% {
+        transform: rotate(20deg);
+    }
+    100% {
+        transform: rotate(-20deg);
+    }
+}
+
+/* shake hands end  */
 
 @media screen and (max-width: 800px) {
     #gameFrame{
